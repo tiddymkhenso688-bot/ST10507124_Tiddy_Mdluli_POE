@@ -112,7 +112,7 @@ font-family: Arial, sans-serif; }
 .tero h1 { font-size: 48px; line-height: 1.1; }
 
 .yellow { color: #ffbe00;}
-.tero p { max-width:450px; margin-top: 50px 40px; background: white; }
+.tero p { max-width:450px; margin-top: 50px 40px; background: none; }
 .who-we-are { text-align: center; padding: 50px 40px; background: white;}
 .who-we-are h2 { font-size: 28px; color: #1a233a;}
 .subtitle { color: #888; font-size: 12px; margin-top: 8px;}
