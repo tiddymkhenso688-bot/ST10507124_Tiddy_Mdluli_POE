@@ -113,8 +113,8 @@ font-family: Arial, sans-serif; }
 
 .yellow { color: #ffbe00;}
 .tero p { max-width:450px; margin-top: 50px 40px; background: none; }
-.who-we-are { text-align: center; padding: 50px 40px; background: white;}
-.who-we-are h2 { font-size: 28px; color: #1a233a;}
+.who-we-are { text-align: center; padding: 40px 20px 20px 20px; background: white;}
+.who-we-are h2 { text-align: center; font-size: 24px; font-weight: bold; color: #1a233a;}
 .subtitle { color: #888; font-size: 12px; margin-top: 8px;}
 .line { width: 40px; height: 3px; background: #ffbe00; margin: 15px auto 30px;}
 
