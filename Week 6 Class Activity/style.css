@@ -1,0 +1,37 @@
+body{
+    background-color: #f2eab7;
+    font-family: Arial, sans-serif;
+
+}
+.page {
+    width: 80%;
+    margin: auto;
+    background-color: #fdf8d0;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.cat-banner {
+    background-image: url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    padding: 20px;
+    color: white;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+  
+    gap: 10px;
+    padding: 10px;
+  
+  
+
+}
