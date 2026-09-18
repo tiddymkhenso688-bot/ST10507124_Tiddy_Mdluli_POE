@@ -18,14 +18,13 @@ The aim is to have created an website that is user-friendly ,accessibility , and
 
 .its a fully responsive websites you can rely on, it works perfectly 
 on every device for example on Phone ,Tablets as well as desktop.
-.The HTML is clean and meaningful,using <nav>, <main>, <section>, <footer> 
-
+.The HTML is clean and meaningful,using <nav>, <main>, <section>, <footer>.
 
 
 ##pages included
-- Homepage with the introduction
-- About us ,with all the information about CHOC
-- Application page ,where u can apply to volunteer
+- Homepage with the introduction.
+- About us ,with all the information about CHOC.
+- Application page ,where u can apply to volunteer.
 - Donation page, where people can donate to help others.
 - Contact us page, where u can contact the foundation if u want to take a patient there or if looking for information.
 
@@ -38,7 +37,8 @@ on every device for example on Phone ,Tablets as well as desktop.
 
     <img width="1600" height="1200" alt="color palette" src="https://github.com/user-attachments/assets/b0614a19-5917-410d-a773-c49bbc2651ba" />
 
-     the new colors go well with the website making it attractive and make people feel that there is still hope.
+     The new colors go well with the website making it attractive and make people feel that there is still hope.
+    The colors have softness,trust,careness as well as their suitable for the children`s foundation.
     
     blue :#00a8e8
     
