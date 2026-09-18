@@ -10,7 +10,7 @@ CHOC is an foundation that is non- profit organisation that supports kids and th
 
 This website was built to share information about the services at CHOC and how people can help.
 
-IT is built as a part two of my POE, where now not only HTML is involved but also CSS.
+It is built as a part two of my POE, where now not only HTML is involved but also CSS.
 
 The aim is to have created an website that is user-friendly ,accessibility , and emotionally supportive on the platform that raises awareness ,provide information and encourages donations and volunteerism.
 
