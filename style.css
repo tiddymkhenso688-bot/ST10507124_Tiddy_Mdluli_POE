@@ -93,6 +93,31 @@ font-family: Arial, sans-serif; }
     font-size: 12px;
     font-weight: bold;
 }
+.thankyou-section{
+    background: white;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+.thankyou-section h1{
+    color: #00a8e8;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0;
+}
+.thankyou-section h2{
+    color: #1565a0;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 25px;
+    line-height: 1.2;
+}
+
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;} 
 
