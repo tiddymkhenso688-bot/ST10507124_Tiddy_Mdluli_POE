@@ -42,7 +42,14 @@ The aim is to have created an website that is user-friendly ,accessibility , and
     
      REFERENCE: . COOLORS,2026.Color palette .[online] Available at:<https://coolors>[Accessed 18 September 2026]
 
-    New pictures were added 
+    New pictures were added
+    <img width="400" height="400" alt="girl in hospital" src="https://github.com/user-attachments/assets/39337cee-92f8-424f-8cbe-64716c300e82" />
+
+<img width="559" height="447" alt="girl" src="https://github.com/user-attachments/assets/66845bf3-943d-4f59-be1f-68cd6dbd2ef7" />
+
+<img width="408" height="400" alt="wheel" src="https://github.com/user-attachments/assets/e90eb7cd-a796-4861-b468-d70ee7f3f42a" />
+
+
     
 
 
