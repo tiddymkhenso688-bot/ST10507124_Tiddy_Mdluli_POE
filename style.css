@@ -160,6 +160,34 @@ font-family: Arial, sans-serif; }
 .card h3 { margin: 12px 0 8px; font-size: 15px ; color:#1a233a }
 .card p { font-size: 11px; color: #666; line-height: 1.6;}
 
+.hope-section{
+    background: white;
+    text-align: center;
+    padding: 80px 20px;
+    font-family: Arial, sans-serif;
+}
+.hope-section h1{
+    color: #00a8e8;
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 80px;
+
+}
+
+.hope-section p{
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.core-section{
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    font-family: Arial;
+}
+
 .footer { background: white; text-align: center; padding: 20px; border-top: 1px solid #eee; }
 .footer a { margin: 0 8px; text-decoration: none; color: #1a233a; font-size: 12px; }
 .footer p { margin-top: o 8px; font-size: 10px; color:#888; }
