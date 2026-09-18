@@ -49,7 +49,8 @@ The aim is to have created an website that is user-friendly ,accessibility , and
 
 <img width="408" height="400" alt="wheel" src="https://github.com/user-attachments/assets/e90eb7cd-a796-4861-b468-d70ee7f3f42a" />
 
-
+REFERENCE FOR THE PICTURES
+. BambyCounce,2026.Kids with cancer.[image online] Available at >https://pin.it/1QrVip6jL>[Accessed 15 September 2026]
     
 
 
