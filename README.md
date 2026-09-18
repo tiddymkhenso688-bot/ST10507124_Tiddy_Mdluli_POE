@@ -35,6 +35,7 @@ The aim is to have created an website that is user-friendly ,accessibility , and
     purple :#a861ab
     pink: #FFC0CB
     Orangered:#FF4500
+     REFERENCE: . COOLORS,2026.Color palette .[online] Available at:<https://coolors>[Accessed 18 September 2026]
     
 
 
