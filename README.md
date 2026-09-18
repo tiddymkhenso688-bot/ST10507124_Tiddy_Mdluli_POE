@@ -55,7 +55,9 @@ The aim is to have created an website that is user-friendly ,accessibility , and
 
 REFERENCE FOR THE PICTURES
 . BambyCounce,2026.Kids with cancer.[image online] Available at >https://pin.it/1QrVip6jL>[Accessed 15 September 2026]
-
+ 
+ Most pictures were found on this reference below
+ 
 .CHOC,2026.pie chart.[image online] Available at <https://choc.org.za
     
 
