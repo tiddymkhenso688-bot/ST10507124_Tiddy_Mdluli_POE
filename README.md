@@ -15,8 +15,11 @@ IT is built as a part two of my POE, where now not only HTML is involved but als
 The aim is to have created an website that is user-friendly ,accessibility , and emotionally supportive on the platform that raises awareness ,provide information and encourages donations and volunteerism.
 
 ###features
-its a fully responsive websites you can rely on, it works perfectly 
+
+.its a fully responsive websites you can rely on, it works perfectly 
 every for example on Phone ,Tablets as well as desktop.
+.The HTML is clean and meaningful,using <nav>, <main>, <section>, <footer> 
+
 
 
 ##pages included
