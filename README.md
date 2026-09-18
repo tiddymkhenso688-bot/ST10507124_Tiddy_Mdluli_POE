@@ -14,7 +14,12 @@ IT is built as a part two of my POE, where now not only HTML is involved but als
 
 The aim is to have created an website that is user-friendly ,accessibility , and emotionally supportive on the platform that raises awareness ,provide information and encourages donations and volunteerism.
 
-##Features
+###features
+its a fully responsive websites you can rely on, it works perfectly 
+every for example on Phone ,Tablets as well as desktop.
+
+
+##pages included
 - Homepage with the introduction
 - About us ,with all the information about CHOC
 - Application page ,where u can apply to volunteer
