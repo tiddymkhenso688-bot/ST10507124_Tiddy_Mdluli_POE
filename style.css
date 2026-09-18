@@ -221,6 +221,28 @@ font-family: Arial, sans-serif; }
     cursor: pointer;
    
 }
+.offer-section{
+    background: #00a8e8;
+    color: white;
+    padding: 40px 30px;
+    font-family: Arial, sans-serif;
+}
+.offer-section h2{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+
+}
+.offer-section{
+    list-style: none;
+    padding: 0;
+}
+.offer-section li{
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 22px;
+    padding-left: 10px;
+}
 
 .footer{
     text-align: center;
