@@ -2,7 +2,7 @@
 
 ##What the websites is all about?
 
-CHOC is an foundation that is non- profit organisation supports kids and their famalies with cancer by providing:
+CHOC is an foundation that is non- profit organisation that supports kids and their families with cancer by providing:
 - Emotional support
 - Accommodations near treatment centre
 - Transport to treatment
@@ -13,7 +13,7 @@ This website was built to share information about the services at CHOC and how p
 The aim is to have created an website that is user-friendly ,accessibility , and emotionally supportive on the platform that raises awareness ,provide information and encourages donations and volunteerism.
 
 ##Features
-- Homepage with the indtroduction
+- Homepage with the introduction
 - About us ,with all the information about CHOC
 - Application page ,where u can apply to volunteer
 - Donation page, where people can donate to help others.
@@ -31,11 +31,18 @@ The aim is to have created an website that is user-friendly ,accessibility , and
      the new colors go well with the website making it attractive and make people feel that there is still hope.
     
     blue :#00a8e8
+    
     gold yellow: #ffbe00
+    
     purple :#a861ab
+    
     pink: #FFC0CB
+    
     Orangered:#FF4500
+    
      REFERENCE: . COOLORS,2026.Color palette .[online] Available at:<https://coolors>[Accessed 18 September 2026]
+
+    New pictures were added 
     
 
 
