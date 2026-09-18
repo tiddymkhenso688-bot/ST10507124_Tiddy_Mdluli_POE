@@ -17,7 +17,7 @@ The aim is to have created an website that is user-friendly ,accessibility , and
 ###features
 
 .its a fully responsive websites you can rely on, it works perfectly 
-every for example on Phone ,Tablets as well as desktop.
+on every device for example on Phone ,Tablets as well as desktop.
 .The HTML is clean and meaningful,using <nav>, <main>, <section>, <footer> 
 
 
