@@ -10,6 +10,8 @@ CHOC is an foundation that is non- profit organisation that supports kids and th
 
 This website was built to share information about the services at CHOC and how people can help.
 
+IT is built as a part two of my POE, where now not HTML is involved but also CSS.
+
 The aim is to have created an website that is user-friendly ,accessibility , and emotionally supportive on the platform that raises awareness ,provide information and encourages donations and volunteerism.
 
 ##Features
@@ -41,6 +43,8 @@ The aim is to have created an website that is user-friendly ,accessibility , and
     Orangered:#FF4500
     
      REFERENCE: . COOLORS,2026.Color palette .[online] Available at:<https://coolors>[Accessed 18 September 2026]
+ 
+    The typography that was used is Sans-serif fonts for readability and to look clean, as well as increased line-height and letter spacing for better text alignment.
 
     New pictures were added
     <img width="400" height="400" alt="girl in hospital" src="https://github.com/user-attachments/assets/39337cee-92f8-424f-8cbe-64716c300e82" />
