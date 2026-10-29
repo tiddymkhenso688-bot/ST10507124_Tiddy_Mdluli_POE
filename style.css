@@ -3,13 +3,14 @@ font-family: Arial, sans-serif; }
 
 .header{
     padding: 10px 30px;
-    background: white;
+    background: orchid;
     display: flex;
     align-items: center;
 }
 .logo{
     height: 45px;
     width: auto;
+    
 }
 
 .navbar {
@@ -17,7 +18,7 @@ font-family: Arial, sans-serif; }
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: white;
+    background: #a861ab;
 
 }
 .logo{
@@ -80,11 +81,12 @@ font-family: Arial, sans-serif; }
 }
 
 .footer-bottom {
-    background: white;
+    background: #a861ab;
     color: #0a2a5a;
     text-align: center;
     padding: 15px;
     border-top: 1px solid #ddd;
+    
 }
 .footer-link a {
     color: #0a2a5a;
@@ -323,10 +325,82 @@ form button:hover {
     font-size: 14px;
 }
 
-{ box-sizing: border-box; font-family: Arial, sans-serif; }
-  body { margin:0; background:#00AEEF; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:20px; }
-  .wrapper { display:flex; gap:30px; flex-wrap:wrap; justify-content:center; max-width:1000px; width:100%; }
-  
+/* ===== ADD THIS - Centers your current form without changing HTML ===== */
+
+/* Center the whole page content */
+body {
+  background-color: #f2f6fb;
+}
+
+/* This is the form from your screenshot - center it */
+form, #myForm {
+  background: white;
+  max-width: 500px;
+  margin: 40px auto; /* this centers it left-right */
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  display: block;
+}
+
+form h1, form h2, .form-title {
+  text-align: center;
+  color: #0066b3;
+}
+
+/* Make inputs bigger and nicer - your current ones are too small */
+form input[type="text"],
+form input[type="email"],
+#firstName, #lastName, #email {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 12px;
+  display: inline-block;
+}
+
+/* Your error messages - make them red and visible */
+#fnameError, #lnameError, #emailError, .error {
+  color: red;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Your submit button - make it yellow CHOC style and centered */
+form input[type="submit"],
+form button,
+button[type="submit"] {
+  background-color: #ffcc00;
+  color: #003366;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px auto 0;
+  display: block;
+  width: 200px;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+  background-color: #ffdb4d;
+}
+
+body{
+    margin: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
   /* CHOC Logo */
   .logo { position:absolute; top:20px; left:20px; color:#4B0082; font-weight:bold; font-size:28px; }
   .logo span { font-size:12px; display:block; line-height:12px; }
@@ -355,9 +429,4 @@ form button:hover {
   .modal p { font-size:13px; color:#333; line-height:1.4; }
   .ok-btn { margin-top:15px; background:#00AEEF; color:white; border:none; padding:10px 30px; border-radius:6px; cursor:pointer; font-weight:bold; }
   .state-label { position:absolute; top:10px; right:20px; color:white; font-size:11px; }
-
-
-
-
-
 
