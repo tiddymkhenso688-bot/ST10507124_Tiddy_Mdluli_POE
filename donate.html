@@ -4,87 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="Javascript/validation.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .header{
-    text-align: left;
-    padding: 15px 30px;
-    background: #a861a8;
-}
-.header a{
-    margin-left: 15px;
-    text-decoration: none;
-    color: pink;
-    font-size: 14px;
-}
+   
+       
 
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
-}
-.footer{
-    text-align: center;
-    padding: 20px;
-    background: #a861a8;
-    margin-top: 20px;
 
-}
-.footer a{
-    margin: 0 8px;
-    text-decoration: none;
-    color: pink;
-    font-size: 14px;
-}
-    </style>
-</head>
+
 <body>
-    <div class="header">
-        <a href="index.html">Home</a>
-        <a href="about us.html">About us</a>
-        <a href="apply.html">Apply</a>
-        <a href="contact us.html">Contact Us</a>
 
+<div class="wrapper">
+
+  <div class="card" id="donationCard">
+   
+    <h2>Make a Donation</h2>
+    
+    <label>Email address</label>
+    <input type="text" id="email" placeholder="john@example.com">
+    <div class="error-msg" id="emailError">Please enter a valid email ❌</div>
+
+    <label>Donation Amount (ZAR)</label>
+    <div class="amount-wrap">
+      <input type="number" id="amount" value="150">
+      <span id="amountDisplay">R150</span>
     </div>
-     <h1> Make a donation here</h1>
 
- <form action="#" method="post">
-        <label for="fullname" >Full Name: </label><br>
-        <input type="text" id="email" name="phone"><br>
-        <br>
-        <label for="phone"> Phone Number</label><br>
-        <input type="tel" id="phone" name="phone>"><br>
-         <button>Submit</button>
-        <br>
-        <h1 style="text-align: center;"> Paypal </h1>
-        <br>
-        <img src="pay.jpeg" style="width: 380px; max-width: 90%; margin: 20px auto; display: block; ">
-        <br>
-        <h1 style="text-align: center;"> Pick n Pay</h1>
-        
-        <p style="text-align: center;"> You can use your smart shopper from pick n pay and go to the nearest pick n pay and donate your points to CHOC.</p>
+    <button class="donate-btn" onclick="validateDonate()">Donate Now</button>
+  </div>
 
-        <h1 style="color: #a861a8; text-align: center;">Thank you so much for the support!</h1>
+  <div class="modal" id="thankYouModal">
 
-        <div class="thankyou-section">
-        <h1>Thank you to our<br>supporters</h1>
-        <h2>CHOC Childhood Cancer Foundation<br>SA Donors</h2>
-    </div>
+    <div class="check">✓</div>
+    <h3>Thank you for<br>supporting CHOC!</h3>
+    <p id="thankText">Your R150 can provide a care bag<br>Your donation helps us provide care packs to children and families fighting childhood cancer.</p>
+    <button class="ok-btn" onclick="closeModal()">OK</button>
+  </div>
+</div>
+
 
 
 
 
    
-    <div class="footer">
-        <a href="index.html">Home</a>
-        <a href="about us.html">About us</a>
-        <a href="apply.html">Apply</a>
-        <a href="contact us.html">Contact Us</a>
-
+    
         
 
         
     </div>
 </body>
+</head>
 </html>
