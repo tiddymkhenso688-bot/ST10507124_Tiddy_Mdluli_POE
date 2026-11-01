@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="stylesheet" href="style.css">
    
 </head>
+<style>
+  /* ACCORDION CSS - COPY THIS */
+.accordion-item { background:white; border-radius:10px; margin:10px 0; overflow:hidden; border:1px solid #ddd; }
+.accordion-header { padding:15px; cursor:pointer; display:flex; justify-content:space-between; align-items:center; font-weight:bold; background:#f8f8f8; }
+.accordion-header:hover { background:#eee; }
+.accordion-content { display:none; padding:15px; line-height:1.6; color:#444; }
+.accordion-item.active .accordion-content { display:block; } /* THIS IS THE KEY - makes answer show */
+.accordion-item.active .accordion-header { background:#8e6cc3; color:white; }
+.icon { background:#ffcc00; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; }
+</style>
 <body>
 
   <div class="page">
@@ -96,6 +107,82 @@
     <h2>Our Core services<br>are made up of:</h2>
   </div>
   <img src="wheel.jpeg" style="width: 380px; max-width: 90%; margin: 20px auto; display: block; ">
+
+  <!-- ===== CHOC ACCORDION FAQ - WEDE5020 POE ===== -->
+<div class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <p class="faq-subtitle">Find answers to common questions about CHOC and how you can support children with cancer.</p>
+
+  <div class="accordion">
+    <!-- Question 1 - OPEN by default -->
+    <div class="accordion-item active">
+      <button class="accordion-header">
+        <span>1. What does CHOC do?</span>
+        <span class="icon">−</span>
+      </button>
+      <div class="accordion-content">
+        <p>CHOC supports children with cancer and life-threatening blood disorders, as well as their families, by providing free accommodation, emotional and psychosocial support, advocacy, and practical assistance throughout the cancer treatment journey. We work hand-in-hand with hospitals across South Africa to ensure that no child or family faces cancer alone. Our services include CHOC Houses for families needing accommodation near treatment centres, counselling and play therapy, transport to medical appointments, nutritional support, and education programmes to help children continue learning while in treatment. All our services are provided at no cost to families.</p>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>2. Where are CHOC Houses?</span>
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>CHOC has 13 Houses and lodges across South Africa, close to major hospitals in Johannesburg, Pretoria, Cape Town, Durban, Polokwane, Bloemfontein and Port Elizabeth. This allows parents to stay near their children during treatment without paying for accommodation.</p>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>3. How are donations used?</span>
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>Your donation of R150 provides a care bag, R500 provides transport for a child for a month, and R1000 provides accommodation for a family for one week. 80% of all donations go directly to programmes for children and families.</p>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="accordion-item">
+      <button class="accordion-header">
+        <span>4. How can I volunteer?</span>
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>You can volunteer at a CHOC House by helping with cooking, tutoring children, or driving families to hospital. Fill in the volunteer form on our Apply page. You need 2 days training and a police clearance.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion that works on this page only
+document.querySelectorAll(".accordion-header").forEach(header => {
+  header.addEventListener("click", function() {
+    const item = this.parentElement;
+    const wasActive = item.classList.contains("active");
+    
+    // Close all
+    document.querySelectorAll(".accordion-item").forEach(i => {
+      i.classList.remove("active");
+      i.querySelector(".icon").textContent = "+";
+    });
+    
+    // Open clicked if it was closed
+    if (!wasActive) {
+      item.classList.add("active");
+      item.querySelector(".icon").textContent = "-";
+    }
+  });
+});
+</script>
+</body>
+</html>
 
   
 

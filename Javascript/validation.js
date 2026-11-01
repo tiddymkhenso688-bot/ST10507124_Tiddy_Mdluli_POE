@@ -77,3 +77,21 @@ function closeModal(){
   document.getElementById("amount").value = "150";
   document.getElementById("amountDisplay").textContent = "R150";
 }
+const headers = document.querySelectorAll(".accordion-header");
+
+headers.forEach(header => {
+  header.addEventListener("click", function() {
+    const item = this.parentElement;
+    const isActive = item.classList.contains("active");
+
+    document.querySelectorAll(".accordion-item").forEach(i => {
+      i.classList.remove("active");
+      i.querySelector(".icon").textContent = "+";
+    });
+
+    if (!isActive) {
+      item.classList.add("active");
+      item.querySelector(".icon").textContent = "-";
+    }
+  });
+});
