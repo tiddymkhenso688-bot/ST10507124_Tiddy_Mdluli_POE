@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us - CHOC</title>
-<script></script>
+
 <style>
   *{box-sizing:border-box; font-family:Arial, sans-serif;}
   body{margin:0; padding:0; background:#e8f2ff; font-family:Arial;}
 
-  /* === HEADER - SAME AS APPLY.HTML === */
+ 
   .site-header{
     background:#9b6bb8;
     padding:15px 25px;
     width:100%;
   }
   .site-header nav{ display:flex; gap:20px; }
-  .site-header nav a{ color:white; text-decoration:none; font-size:15px; font-weight:500; }
+  .site-header nav a{ color:pink; text-decoration:none; font-size:15px; font-weight:500; }
   .site-header nav a:hover{ color:#ffde59; text-decoration:underline; }
 
-  /* === CONTACT FORM CENTER === */
+  
   .page-center{
     display:flex;
     justify-content:center;
@@ -36,6 +36,34 @@
   .submit-btn{background:#0a5dc2; color:#ffde59; border:none; width:160px; padding:12px; border-radius:10px; font-weight:bold; display:block; margin:15px auto 0; cursor:pointer; border-bottom:4px solid #ffde59;}
   .error-box{display:none; background:#ffe5e5; border:2px solid red; border-radius:12px; padding:12px; color:#b00000; margin-top:15px;}
   .success-box{display:none; background:#d4edda; border:2px solid green; border-radius:12px; padding:12px; color:#0a5a00; margin-top:15px;}
+
+
+  .site-footer{
+  background:#2d2d5a;
+  color:white;
+  padding:30px 25px 10px;
+  margin-top:40px;
+}
+.footer-content{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+  max-width:1000px;
+  margin:auto;
+}
+.footer-content h4{ margin:0 0 8px; color:#ffde59; font-size:15px; }
+.footer-content p{ margin:0; font-size:13px; color:#ddd; line-height:1.5; }
+.footer-content a{ color:#ddd; text-decoration:none; }
+.footer-content a:hover{ color:#ffde59; text-decoration:underline; }
+.footer-bottom{
+  text-align:center;
+  border-top:1px solid #444;
+  margin-top:20px;
+  padding-top:10px;
+  font-size:12px;
+  color:#aaa;
+}
 </style>
 </head>
 <body>
@@ -77,6 +105,29 @@
   <div id="successBox" class="success-box"><h3>✅ Success!</h3><p>Message sent - we'll reply within 24h</p></div>
 </div>
 </div>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div>
+      <h4>CHOC Childhood Cancer Foundation</h4>
+      <p>Keeping more than hope alive - Supporting children with cancer and their families.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="index.html">Home</a> | <a href="about us.html">About Us</a> | <a href="donate.html">Donate</a> | <a href="apply.html">Volunteer</a></p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: info@choc.org.za | Phone: 0800 333 055</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CHOC Childhood Cancer Foundation SA. All Rights Reserved. | WEDE5020 POE - ST10507124</p>
+  </div>
+</footer>
+
+
+
 
 <script>
 document.getElementById("contactForm").addEventListener("submit", function(e){
