@@ -1,87 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <style>
-             .header{
-    text-align: left;
-    padding: 15px 30px;
-    background: #a861ab;
-}
-.header a{
-    margin-left: 15px;
-    text-decoration: none;
-    color: pink;
-    font-size: 14px;
-    text-align: right;
-}
-
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
-}
-.footer{
-    text-align: center;
-    padding: 20px;
-    background: #a861ab;
-    margin-top: 20px;
-
-}
-.footer a{
-    margin: 0 8px;
-    text-decoration: none;
-    color: pink;
-    font-size: 14px;
-    text-align: center;
-}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - CHOC</title>
+<style>
+  *{box-sizing:border-box; font-family:Arial, sans-serif;}
+  body{margin:0; background:#e8f2ff; display:flex; justify-content:center; padding:30px;}
+  .card{background:white; width:360px; border-radius:16px; padding:25px; box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+  h2{color:#003366; text-align:center; margin:0; font-size:24px;}
+  .sub{color:#003366; text-align:center; font-weight:bold; margin:0 0 15px; font-size:14px;}
+  label{font-weight:bold; font-size:14px; color:#003366; margin:10px 0 5px; display:block;}
+  .input-row{display:flex; align-items:center; gap:8px; margin-bottom:10px;}
+  .icon-circle{background:#0a74da; color:white; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:18px;}
+  input, textarea{flex:1; padding:12px; border:1.5px solid #a0c4ff; border-radius:10px; outline:none;}
+  textarea{width:100%; height:80px; resize:none; margin-top:5px;}
+  input:focus, textarea:focus{border-color:#0a74da;}
+  
+  .submit-btn{background:#0a5dc2; color:#ffde59; border:none; width:160px; padding:12px; border-radius:10px; font-weight:bold; font-size:16px; display:block; margin:15px auto 0; cursor:pointer; border-bottom:4px solid #ffde59; transition:0.3s;}
+  .submit-btn:hover{background:#084a9c; transform:scale(1.05);}
+  
+  /* Validation Boxes - like your 2nd picture */
+  .error-box{display:none; background:#ffe5e5; border:2px solid #ff0000; border-radius:12px; padding:12px; color:#b00000; margin-top:15px;}
+  .success-box{display:none; background:#d4edda; border:2px solid #0a8a00; border-radius:12px; padding:12px; color:#0a5a00; margin-top:15px;}
+  .error-box h3, .success-box h3{margin:0; font-size:16px;}
+  .error-box p, .success-box p{margin:3px 0 0; font-size:12px;}
+</style>
 </head>
 <body>
      <div class="header">
         <a href="index.html">Home</a>
         <a href="about us.html">About us</a>
-        <a href="apply.html">Apply</a>
         <a href="donate.html">Donate</a>
+        <a href="contact us.html">Contact Us</a>
 
     </div>
-    
-       <h1 style="text-align: center; color: blueviolet;"> Get in Touch with us</h1>
-       <br> 
-       <h3 style="text-align: center;"> Contact: +27 86 111 3500</h3>
-       <br>
-       <h3 style="text-align: center;"> Email: bdu@choc.org.za</h3>
-       <br>
-       <h3 style="text-align: center;"> Facebook: @CHOCFoundationSA</h3>
+    <br>
 
-       
-       </div>
-       <br>
 
-       <h1 style="color: orangered; text-align: center;">Hope to hear from you soon!</h1>
-       <br>
-        <div class="thankyou-section">
-        <h1>Thank you to our<br>supporters</h1>
-        <h2>CHOC Childhood Cancer Foundation<br>SA Donors</h2>
+<div class="card">
+  <h2>Contact Us</h2>
+  <p class="sub">We're Here to Help</p>
+
+  <form id="contactForm">
+    <label>Name</label>
+    <div class="input-row">
+      <div class="icon-circle">👤</div>
+      <input type="text" id="name" placeholder="Jane Doe">
     </div>
 
-
-
-
-     
-      
-    
-    <div class="header">
-        <a href="index.html">Home</a>
-        <a href="about us.html">About us</a>
-        <a href="apply.html">Apply</a>
-        <a href="donate.html">Donate</a>
-
+    <label>Email</label>
+    <div class="input-row">
+      <div class="icon-circle">✉️</div>
+      <input type="text" id="email" placeholder="jane@example.org">
     </div>
+
+    <label>Phone</label>
+    <div class="input-row">
+      <div class="icon-circle">📞</div>
+      <input type="text" id="phone" placeholder="12345">
+    </div>
+
+    <label>Message</label>
+    <textarea id="message" placeholder="How can we help you today?"></textarea>
+
+    <button type="submit" class="submit-btn">Submit ✈</button>
+  </form>
+
+  <!-- Validation Error - Red box -->
+  <div id="errorBox" class="error-box">
+    <h3>⚠️ Validation Error</h3>
+    <h3>Please enter valid phone number</h3>
+    <p>Phone must be 10-12 digits, numbers only — no letters/symbols</p>
+  </div>
+
+  <!-- Success - Green box -->
+  <div id="successBox" class="success-box">
+    <h3>✅ Success!</h3>
+    <h3>Message sent successfully!</h3>
+    <p>Your enquiry has been received — we'll reply within 24h</p>
+  </div>
+</div>
+
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault(); // AJAX - page does NOT reload
+
+  const phone = document.getElementById("phone").value.trim();
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  const errorBox = document.getElementById("errorBox");
+  const successBox = document.getElementById("successBox");
+
+  errorBox.style.display = "none";
+  successBox.style.display = "none";
+
+  // Validation - POE Requirement
+  if(name === "" || email === "" || message === ""){
+    errorBox.innerHTML = "<h3>⚠️ Validation Error</h3><h3>Please fill all fields</h3><p>All fields are required</p>";
+    errorBox.style.display = "block";
+    return;
+  }
+
+  if(!email.includes("@")){
+    errorBox.innerHTML = "<h3>⚠️ Validation Error</h3><h3>Please enter valid email</h3><p>Email must contain @</p>";
+    errorBox.style.display = "block";
+    return;
+  }
+
+  // Phone must be 10-12 digits, numbers only - like your picture
+  if(!/^[0-9]{10,12}$/.test(phone)){
+    errorBox.innerHTML = "<h3>⚠️ Validation Error</h3><h3>Please enter valid phone number</h3><p>Phone must be 10-12 digits, numbers only — no letters/symbols</p>";
+    errorBox.style.display = "block";
+    return;
+  }
+
+  // If all good - show Success!
+  successBox.style.display = "block";
+  this.reset();
+});
+</script>
+
 </body>
-</html
+</html>
