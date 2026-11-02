@@ -1,88 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="Javascript/validation.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <style>
-      body{
-         margin: 0;
-    background-color: white;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-      }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate - CHOC</title>
+<style>
+  body{margin:0; font-family:Arial; background:#f5f7ff;}
+  .header{ background:#9b6bb8; padding:15px 25px; display:flex; gap:20px; }
+  .header a{ color:white; text-decoration:none; }
+  .header a.active{ font-weight:bold; text-decoration:underline; }
 
-      
+  .main{ display:flex; justify-content:center; padding:40px 20px; }
+  .card{ 
+    background:white; 
+    width:360px; 
+    padding:25px; 
+    border-radius:12px; 
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    animation: fadeInUp 0.8s ease;
+  }
+  label{ font-size:13px; font-weight:bold; margin:12px 0 5px; display:block; }
+  input{ width:100%; padding:12px; border:1.5px solid #a0c4ff; border-radius:8px; outline:none; }
+  input:focus{ border-color:#9b6bb8; }
 
-      
+  .btn{ 
+    background:#ffcc00; 
+    width:100%; 
+    padding:13px; 
+    border:none; 
+    border-radius:8px; 
+    margin-top:18px; 
+    font-weight:bold; 
+    cursor:pointer; 
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+  }
+  .btn:hover{ transform:scale(1.05); background:#ffb700; }
 
-    </style>
-   
-      
+  .footer{ background:#2d2d5a; color:white; padding:20px; text-align:center; margin-top:50px; font-size:13px; }
+  .footer a{ color:white; text-decoration:none; margin:0 8px; }
+
+  /* ANIMATIONS FOR POE */
+  @keyframes fadeInUp {
+    from{ opacity:0; transform:translateY(30px); }
+    to{ opacity:1; transform:translateY(0); }
+  }
+  @keyframes popIn {
+    from{ transform:scale(0.5); opacity:0; }
+    to{ transform:scale(1); opacity:1; }
+  }
+  @keyframes shake {
+    0%,100%{ transform:translateX(0); }
+    25%{ transform:translateX(-6px); }
+    75%{ transform:translateX(6px); }
+  }
+  @keyframes pulse {
+    0%{ box-shadow:0 0 0 0 rgba(255,204,0,0.7); }
+    70%{ box-shadow:0 0 0 10px rgba(255,204,0,0); }
+    100%{ box-shadow:0 0 0 0 rgba(255,204,0,0); }
+  }
+</style>
+</head>
 <body>
 
-  <body>
-<!-- ADD THIS HEADER - Same as apply.html -->
-<nav style="background:#8e6cc3; padding:15px; position:absolute; top:0; left:0; width:100%; z-index:10;">
-  <a href="index.html" style="color:pink; text-decoration:none; margin-right:20px; font-weight:bold;">Home</a>
-  <a href="about us.html" style="color:pink; text-decoration:none; margin-right:20px; font-weight:bold;">About us</a>
-  <a href="apply.html" style="color:pink; text-decoration:none; margin-right:20px; font-weight:bold;">Apply</a>
-  <a href="donate.html" style="color:pink; text-decoration:none; margin-right:20px; font-weight:bold; border-bottom:2px solid white;">Donate</a>
-  <a href="contact us.html" style="color:pink; text-decoration:none; font-weight:bold;">Contact Us</a>
-</nav>
+<div class="header">
+  <a href="index.html">Home</a>
+  <a href="about us.html">About us</a>
+  <a href="apply.html">Apply</a>
+  <a href="donate.html" class="active">Donate</a>
+  <a href="contact us.html">Contact Us</a>
+</div>
 
-
-
-  <div class="card" id="donationCard">
-   
-    <h2>Make a Donation</h2>
-    
-    <label>Email address</label>
-    <input type="text" id="email" placeholder="john@example.com">
-    <div class="error-msg" id="emailError">Please enter a valid email </div>
-
-    <label>Donation Amount (ZAR)</label>
-    <div class="amount-wrap">
-      <input type="number" id="amount" value="150">
-      <span id="amountDisplay">R150</span>
-    </div>
-
-    <button class="donate-btn" onclick="validateDonate()">Donate Now</button>
-  </div>
-
-  <div class="modal" id="thankYouModal">
-
-    <div class="check">✓</div>
-    <h3>Thank you for<br>supporting CHOC!</h3>
-    <p id="thankText">Your R150 can provide a care bag<br>Your donation helps us provide care packs to children and families fighting childhood cancer.</p>
-    <button class="ok-btn" onclick="closeModal()">OK</button>
+<div class="main">
+  <div class="card">
+    <h3 style="margin:0 0 15px; color:#2d2d5a;">Make a Donation</h3>
+    <form id="donateForm">
+      <label>Email address</label>
+      <input type="text" id="email" placeholder="tiddy@example.com">
+      
+      <label>Donation Amount (ZAR)</label>
+      <input type="number" id="amount" placeholder="150">
+      
+      <button type="submit" class="btn">Donate Now</button>
+    </form>
   </div>
 </div>
 
+<div class="footer">
+  <p><a href="index.html">Home</a> <a href="about us.html">About us</a> <a href="donate.html">Donate</a> <a href="contact us.html">Contact Us</a></p>
+  <p style="color:#aaa; font-size:11px; margin-top:8px;">© 2026 CHOC Childhood Cancer Foundation SA. | WEDE5020 POE - ST10507124 Tiddy Mdluli</p>
+</div>
 
+<div id="successModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:1000;">
+  <div style="background:white; padding:35px 25px; border-radius:15px; text-align:center; width:90%; max-width:350px; animation: popIn 0.4s ease;">
+    <div style="font-size:50px;"></div>
+    <h2 style="color:#2d2d5a; margin:10px 0;">Donation Successful!</h2>
+    <p style="color:#555; font-size:14px;">Thank you for supporting CHOC! Your donation will help children with cancer.</p>
+    <button id="closeBtn" style="background:#ffcc00; border:none; padding:12px 25px; border-radius:8px; margin-top:15px; font-weight:bold; cursor:pointer;">Close</button>
+  </div>
+</div>
 
+<script>
+const form = document.getElementById("donateForm");
+const email = document.getElementById("email");
+const modal = document.getElementById("successModal");
+const closeBtn = document.getElementById("closeBtn");
 
+form.addEventListener("submit", function(e){
+  e.preventDefault();
 
-   
-    
-        
+  // check email
+  if(!email.value.includes("@") || !email.value.includes(".")){
+    email.style.border="2px solid red";
+    email.style.animation="shake 0.4s";
+    setTimeout(()=>{ email.style.animation=""; }, 400);
+    return;
+  }
 
-        
-    </div>
+  email.style.border="1.5px solid #a0c4ff";
+  // SHOW SUCCESS WITH ANIMATION
+  modal.style.display="flex";
+  form.reset();
+});
 
-     <div class="footer">
-        <a href="index.html">Home</a>
-        <a href="about us.html">About us</a>
-        <a href="donate.html">Donate</a>
-        <a href="contact us.html">Contact Us</a>
+closeBtn.addEventListener("click", function(){
+  modal.style.display="none";
+});
 
-        
-    </div>
-    
+// close if click outside
+modal.addEventListener("click", function(e){
+  if(e.target === modal) modal.style.display="none";
+});
+</script>
+
 </body>
-</head>
 </html>
